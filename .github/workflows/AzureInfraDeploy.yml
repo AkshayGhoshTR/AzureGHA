@@ -28,7 +28,7 @@ jobs:
         az account show
         az deployment group create \
         --name ExampleDeployment \
-        --resource-group GHADeploy \
+        --resource-group DOE-India-VM \
         --template-file armtemplates/webapp-windows.json \
         --parameters webSiteName="${{vars.APPSERVICENAME1}}" hostingPlanName="${{vars.HOSTINGPLANNAME}}" skuName="S1" location="eastus" skuCapacity="1"
 
