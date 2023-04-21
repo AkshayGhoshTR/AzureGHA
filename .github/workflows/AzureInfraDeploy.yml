@@ -33,6 +33,6 @@ jobs:
         --resource-group DOE-India-VM \
         --template-file armtemplates/webapp-windows.json \
         --parameters webSiteName="${{vars.APPSERVICENAME1}}" hostingPlanName="${{vars.HOSTINGPLANNAME}}" skuName="S1" location="eastus2" skuCapacity="1"
-
+        --mode=incremental
 
     
