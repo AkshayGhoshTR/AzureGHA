@@ -22,6 +22,7 @@ jobs:
    - name: checkout source
      uses: actions/checkout@v2
 
+     # Incrementally deploys infra
    - name: Azure CLI script
      uses: azure/CLI@v1
      with:
