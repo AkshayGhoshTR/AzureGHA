@@ -4,7 +4,7 @@ name: Release
 on:
   # COMMENT for manually releasing versions
   workflow_run:
-    workflows: [CI]
+    workflows: [AzureARMDeploy]
     types:
       - completed
     branches:
